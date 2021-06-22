@@ -1,0 +1,275 @@
+html,
+body {
+  background: #dddddd;
+
+  width: 100%;
+}
+
+.maintenence {
+  margin-top: 10%;
+}
+
+.img-div,
+.img-src {
+  width: 100%;
+}
+
+/* .img-src {
+  width: 75%;
+  display: block;
+  margin: auto;
+} */
+
+.img-div {
+  display: block;
+  margin: auto;
+}
+
+#zero_margin_padding {
+  margin: 0;
+  padding: 0;
+}
+
+.under_maintenance_text {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.icon_image_file {
+  display: block;
+  margin: auto;
+  width: 26%;
+}
+
+.under_maintenance_description {
+  text-align: center;
+  line-height: 10px;
+  margin-top: 25px;
+}
+
+.under_maintenance_description--text--desktop {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.left-part-margin-padding {
+  margin-top: 40px;
+}
+
+.mobile-screen-content {
+  display: none;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 6%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only */
+  .desktop-screen {
+    display: none;
+  }
+
+  .under_maintenance_text {
+    font-size: 50px;
+  }
+
+  .mobile-screen-content {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .img-src {
+    width: 75%;
+    display: block;
+    margin: auto;
+  }
+
+  .icon-image {
+    margin-bottom: 10%;
+  }
+
+  .under_maintenance_description--text--mobile {
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------ end - media screen for tab ( portrait )  */
+
+/* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+
+  .under_maintenance_text {
+    font-size: 50px;
+  }
+
+  .maintenence {
+    margin-top: 5px;
+  }
+
+  .desktop-screen {
+    display: none;
+  }
+
+  .mobile-screen-content {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .img-src {
+    width: 33%;
+    display: block;
+    margin: auto;
+  }
+
+  .icon_image_file {
+    width: 12%;
+  }
+
+  .icon-image {
+    margin-bottom: 6%;
+  }
+}
+
+/* -------------------------------------------------------------------------------------- end - media screen for tab (landscape) */
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .under_maintenance_description--text--mobile {
+    font-size: 23px;
+  }
+
+  .under_maintenance_description {
+    line-height: 15px;
+    margin-top: 30px;
+  }
+  .footer p {
+    font-size: 20px;
+    margin-top: 13%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------- end - media screen for tab (pro) portrait */
+
+/* ---------------------------------------------- media screen for tab ( pro ) landscape --------------------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .maintenence {
+    margin-top: 20%;
+  }
+
+  .under_maintenance_text {
+    font-size: 50px;
+  }
+
+  .under_maintenance_description--text--desktop {
+    line-height: 15px;
+  }
+
+  .footer p {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+}
+
+/* ------------------------------------------------------------------------------- end - media screen for tab ( pro ) landscape  */
+
+/* ------------------------------------------------------- media screen for mobile devices ------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .under_maintenance_text {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .maintenence {
+    margin-top: 10%;
+  }
+
+  .desktop-screen {
+    display: none;
+  }
+
+  .mobile-screen-content {
+    display: block;
+    margin-top: 20%;
+  }
+
+  .img-div {
+    margin-top: 10%;
+  }
+
+  .img-src {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .icon_image_file {
+    width: 50%;
+  }
+
+  .icon-image {
+    margin-bottom: 6%;
+  }
+
+  .under_maintenance_description--text--mobile {
+    font-size: 12px;
+    line-height: 2px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    margin-top: 15%;
+  }
+}
+
+/* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (device-width: 1366px) and (device-height: 768px) {
+  .under_maintenance_text {
+    font-size: 48px;
+  }
+}
+
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
+
+/* -------------------------------------------- media screen for iphonex -------------------------------------------------------- */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .footer p {
+    font-size: 12px;
+    margin-top: 50%;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------- end - media screen for iphonex */
+
+/* ----------------------------------- media screen for pixel 2 xl ------------------------------------------------------------ */
+
+@media only screen and (device-width: 411px) and (device-height: 823px) {
+  .footer p {
+    font-size: 12px;
+    margin-top: 40%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ end - media screen for pixel 2 xl */
